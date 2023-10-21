@@ -1,0 +1,20 @@
+body.login{
+    background-color: #074ec9;
+}
+
+body.login div#login{
+    width: 420px;
+}
+
+body.login div#login h1 a{
+    background-image: url(../../images/lubeca-logo.png);
+    background-size: 45%;
+    height: 155px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+body.login #backtoblog a, 
+.login #nav a{
+    color: #fff;
+}
