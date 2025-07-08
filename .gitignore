@@ -1,0 +1,8 @@
+/uploads/*
+/upgrade/*
+/upgrade-temp-backup/*
+/twentytwentyfive/*
+/twentytwentyfour/*
+crewclaims-lubeca.zip
+index.php
+.DS_Store
