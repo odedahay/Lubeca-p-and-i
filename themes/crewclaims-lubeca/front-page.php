@@ -111,38 +111,29 @@
                                 <span>News & Publications</span>
                             </div>
                             <div class="features-grid">
-                                <div class="grid">
-                                    <?php $our_services_one = new WP_Query(array(
-                                            'page_id' => '15'
-                                        ));
-                                    ?>
-                                    <?php  while( $our_services_one->have_posts() ){
-                                            $our_services_one->the_post(); ?>
-                                        <div class="inner-icon-w-title">
-                                            <i class="pe-7s-id"></i>
-                                            <h2><?php the_title(); ?></h2>
+                                <?php 
+                                $homePageNews = new WP_Query ( array(
+                                    'post_type' => 'post',
+                                    'posts_per_page' => 2
+                                ));
+                                    while( $homePageNews -> have_posts()){
+                                        $homePageNews ->the_post(); ?>
+                                        <div class="grid">
+                                    
+                                            <div class="inner-icon-w-title">
+                                                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                                               
+                                            </div>
+                                            <p><?php echo wp_trim_words(get_the_content(), 18, '...'); ?></p>
                                         </div>
-                                        <?php the_content(); ?>
-                                    <?php } ?>
-                                </div>
-                                <div class="grid">
-                                    <?php $our_services_one = new WP_Query(array(
-                                            'page_id' => '13'
-                                        ));
-                                    ?>
-                                     <?php while( $our_services_one->have_posts() ){
-                                            $our_services_one->the_post(); ?>
-                                        <div class="inner-icon-w-title">
-                                            <i class="pe-7s-ribbon"></i>
-                                            <h2><?php the_title(); ?></h2>
-                                        </div>
-                                        <?php the_content(); ?>
-                                    <?php } wp_reset_postdata(); ?>
-                                </div>
+                                        
+                                <?php } wp_reset_postdata(); ?>
+                                        
+                               
                                 <!-- <div class="grid">
                                     <div class="inner-icon-w-title">
                                         <i class="pe-7s-note2"></i>
-                                    <h2>Consultancy Services</h2>
+                                        <h2>Consultancy Services</h2>
                                     </div>
                                     <p>Your reliable partner in risk assessment and risk management in the Philippines</p>
                                 </div> -->
