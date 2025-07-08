@@ -43,7 +43,7 @@
                                 <h3>Contact Us</h3>
                                 <ul>
                                     <li><a href="https://www.facebook.com/lubpicrewclaims" target="_blank" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                                    <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                                    <!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
                                 </ul>
                                 <p>Suite 205 Marbella 1 Bldg. 2223 Roxas Blvd., Pasay City 1300 Philippines</p>
                             </section>

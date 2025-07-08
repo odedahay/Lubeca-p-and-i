@@ -27,7 +27,15 @@
                                 the_post(); ?>
 
                                 <div class="post format-standard-image">
-                                    <div class="entry-media">
+                                   
+                                    <div class="entry-details">
+                                        
+                                        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?> </a></h3>
+                                        <div class="entry-meta">
+                                            <div class="date"><?php the_time('d F Y'); ?></div>
+                                            <div class="tags"><?php echo get_the_category_list(', '); ?></div>
+                                        </div>
+                                        <div class="entry-media">
                                         <?php 
                                         if( has_post_thumbnail() ) { ?>
                                             <div class="banner-news-list-img">
@@ -39,13 +47,7 @@
                                         <?php } ?>
                             
                                     </div>
-                                    <div class="entry-details">
-                                        
-                                        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?> </a></h3>
-                                        <div class="entry-meta">
-                                            <div class="date"><?php the_time('d F Y'); ?></div>
-                                            <div class="tags"><?php echo get_the_category_list(', '); ?></div>
-                                        </div>
+                                       
                                         <p><?php echo wp_trim_words(get_the_content(), 24); ?></p>
                                         <a href="<?php the_permalink(); ?>" class="read-more">Read More <i class="fi ti-angle-right"></i></a>
                                     </div>

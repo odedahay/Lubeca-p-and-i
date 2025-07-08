@@ -338,6 +338,26 @@
 	}
 }
 
+p.theme-btn-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a.theme-btn-link{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #ef233c;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    transition: all .4s ease;
+}
+a.theme-btn-link:hover{
+    background-color: #f73f55;
+}
+
 /*** Contact Form ***/
 input[type=submit].wpcf7-form-control.wpcf7-submit{
     background-color: #ff0101;

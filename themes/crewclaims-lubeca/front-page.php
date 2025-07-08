@@ -128,8 +128,7 @@
                                         </div>
                                         
                                 <?php } wp_reset_postdata(); ?>
-                                        
-                               
+                                
                                 <!-- <div class="grid">
                                     <div class="inner-icon-w-title">
                                         <i class="pe-7s-note2"></i>
@@ -138,6 +137,10 @@
                                     <p>Your reliable partner in risk assessment and risk management in the Philippines</p>
                                 </div> -->
                             </div>
+                            <br>   
+                                <p class="theme-btn-center">
+                                    <a href="<?php echo site_url('/news'); ?>" class="theme-btn-link">View All News & Publications  <i class="ti-arrow-right"></i></a>
+                                </p>
                         </div>
                     </div>
                 </div>

@@ -24,7 +24,7 @@
                         <ul>
                             <li><a href="/#our-services">Our Services</a></li>
                             <li><a href="/#about-us">About Us</a></li>
-                            <li><a <?php if( get_post_type() == 'post') echo 'class="active"'; ?> href="<?php echo site_url('/news'); ?>">News & Publication</a></li>
+                            <li><a <?php if( get_post_type() == 'post') echo 'class="active"'; ?> href="/#new-section">News & Publication</a></li>
                             <li><a <?php if( is_page('contact-us') or wp_get_post_parent_id(0) == 10) echo 'class="active"'; ?> href="<?php echo site_url('/contact-us'); ?>">Contact Us</a></li>
                         </ul>
                     </nav>
