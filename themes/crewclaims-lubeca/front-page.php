@@ -101,6 +101,58 @@
                 </div>
             </div>
         </section>
+        <section id="new-section">
+            <div id="features-wrapper" class="feature-section section-padding">
+                <div class="glass-effect"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-12-medium">
+                            <div class="section-title-s2">
+                                <span>News & Publications</span>
+                            </div>
+                            <div class="features-grid">
+                                <div class="grid">
+                                    <?php $our_services_one = new WP_Query(array(
+                                            'page_id' => '15'
+                                        ));
+                                    ?>
+                                    <?php  while( $our_services_one->have_posts() ){
+                                            $our_services_one->the_post(); ?>
+                                        <div class="inner-icon-w-title">
+                                            <i class="pe-7s-id"></i>
+                                            <h2><?php the_title(); ?></h2>
+                                        </div>
+                                        <?php the_content(); ?>
+                                    <?php } ?>
+                                </div>
+                                <div class="grid">
+                                    <?php $our_services_one = new WP_Query(array(
+                                            'page_id' => '13'
+                                        ));
+                                    ?>
+                                     <?php while( $our_services_one->have_posts() ){
+                                            $our_services_one->the_post(); ?>
+                                        <div class="inner-icon-w-title">
+                                            <i class="pe-7s-ribbon"></i>
+                                            <h2><?php the_title(); ?></h2>
+                                        </div>
+                                        <?php the_content(); ?>
+                                    <?php } wp_reset_postdata(); ?>
+                                </div>
+                                <!-- <div class="grid">
+                                    <div class="inner-icon-w-title">
+                                        <i class="pe-7s-note2"></i>
+                                    <h2>Consultancy Services</h2>
+                                    </div>
+                                    <p>Your reliable partner in risk assessment and risk management in the Philippines</p>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Features -->
         <section id="partner-section">
             <div id="main-wrapper" class="main-wrapper">
                 <div class="container">
