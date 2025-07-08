@@ -29,7 +29,7 @@
                             <div class="features-grid">
                                 <div class="grid">
                                     <?php $our_services_one = new WP_Query(array(
-                                            'page_id' => '36'
+                                            'page_id' => '15'
                                         ));
                                     ?>
                                     <?php  while( $our_services_one->have_posts() ){
@@ -43,7 +43,7 @@
                                 </div>
                                 <div class="grid">
                                     <?php $our_services_one = new WP_Query(array(
-                                            'page_id' => '38'
+                                            'page_id' => '13'
                                         ));
                                     ?>
                                      <?php while( $our_services_one->have_posts() ){
@@ -83,7 +83,7 @@
                                 <div id="content">
                                   
                                     <?php $query_about_us = new WP_Query(array(
-                                        'page_id' => '30'
+                                        'page_id' => '9'
                                     )); 
 
                                     while( $query_about_us->have_posts()){
