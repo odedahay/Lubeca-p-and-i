@@ -103,7 +103,6 @@
         </section>
         <section id="new-section">
             <div id="features-wrapper" class="feature-section section-padding">
-                <div class="glass-effect"></div>
                 <div class="container">
                     <div class="row">
                         <div class="col col-12-medium">
@@ -148,7 +147,7 @@
         </section>
     <!-- Features -->
         <section id="partner-section">
-            <div id="main-wrapper" class="main-wrapper">
+            <div id="main-wrapper-last" class="main-wrapper">
                 <div class="container">
                     <div class="row">
                         <div class="col-6 off-3 col-12-medium">
