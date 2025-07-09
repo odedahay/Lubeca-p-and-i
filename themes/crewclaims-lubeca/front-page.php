@@ -120,7 +120,7 @@
                                         <div class="grid">
                                     
                                             <div class="inner-icon-w-title">
-                                                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                                                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                                                
                                             </div>
                                             <p><?php echo wp_trim_words(get_the_content(), 18, '...'); ?></p>
