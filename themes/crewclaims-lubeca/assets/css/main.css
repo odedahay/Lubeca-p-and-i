@@ -2029,7 +2029,7 @@ input, select, textarea {
 	@media screen and (min-width: 737px) {
 		.fixed-top {
 			position: fixed;
-			top: 0;
+			top: 20px;
 			right: 0;
 			left: 0;
 			z-index: 1030;
@@ -2127,7 +2127,8 @@ input, select, textarea {
 					transition: background-color .25s ease-in-out;
 					font-weight: 600;
 					letter-spacing: 0.025em;
-					color: #696969;
+					/* color: #696969; */
+					color: #ffffff;
 					text-decoration: none;
 					border-radius: 6px;
 					padding: 0.5em 1em 0.5em 1em;
@@ -2336,7 +2337,7 @@ input, select, textarea {
 		max-width: 720px
 	}
 	.header-top{
-		margin-top: 90px;
+		margin-top: 12px;
 	}
 }
 
@@ -3311,3 +3312,43 @@ iframe {
     display: none;
 }
 
+/* Add background and shadow to header-wrapper when scrolled */
+#header-wrapper.adjust-height {
+  background: rgba(255,255,255,.75)!important;
+  box-shadow: 0 3px 9px rgba(0,0,0,0.08);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+
+#header-wrapper.adjust-height #nav ul li a{
+	color: #696969;
+}
+
+#header-wrapper.adjust-height #nav ul li a.active{
+	color: #fff;
+}
+
+
+@media screen and (min-width: 737px) {
+	#header-wrapper.adjust-height.fixed-top {
+		top: 0px;
+	}
+	
+}
+
+.page-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.35); /* adjust opacity as needed */
+  z-index: 1;
+  pointer-events: none;
+}
+
+.page-title > *:not(.glass-effect2) {
+  position: relative;
+  z-index: 2;
+}

@@ -220,6 +220,7 @@
 @media screen and (min-width: 1400px){
 	.hero-area-s2 {
 		width: calc(100% - 180px);
+        /* width: 100%; */
 	}
 }
 
@@ -281,7 +282,8 @@
 @media screen and (min-width: 1400px){
 	.page-title {
 		width: calc(100% - 180px);
-		margin: 80px auto 0 auto;
+		/* margin: 80px auto 0 auto; */
+        margin: 0px auto 0 auto;
 	}
 	
 }

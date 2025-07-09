@@ -9,7 +9,7 @@
     <main>
     <div id="page-wrapper">
     <!-- Header -->
-        <div id="header-wrapper" class="fixed-top header-wrapper-style">
+        <div id="header-wrapper" class="fixed-top header-wrapper-style_">
             <header id="header" class="container">
 
                 <!-- Logo -->
